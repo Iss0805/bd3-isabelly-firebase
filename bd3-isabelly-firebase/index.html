@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD3 - FIREBASE </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    <!-- SDK DO FIREBASE-->
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+
+
+    
+
+    <!-- SDK DO FIRESTORE -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> 
+
+
+    <!-- CONEXÃO COM O FIREBASE -->
+
+    <script>
+    const firebaseConfig = {
+            apiKey: "AIzaSyAIlMooFhhh_E-PTx6QiX6a97q2g5taGeo",
+            authDomain: "bd3-app-libri-isabelly.firebaseapp.com",
+            projectId: "bd3-app-libri-isabelly",
+            storageBucket: "bd3-app-libri-isabelly.appspot.com",
+            messagingSenderId: "244336367294",
+            appId: "1:244336367294:web:ca6bc2539f0b318dfab0ef",
+            measurementId: "G-7YFNFLZ04P"
+    };
+
+        // Inicia o firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // inicia o fireStore
+
+        const db = firebase.firestore();
+        console.log(db);
+
+
+
+
+
+    </script>
+
+    <!-- importação do arquivo app.js -->
+
+    <script src="app.js">
+
+    </script>
+    
+</body>
+</html>
